@@ -1,46 +1,50 @@
-.sacola {
-background-image: url(../img/sacola.png);
-background-repeat: no-repeat;
-background-position: top right;
-font-size: 14px;
-padding-right: 35px;
-text-align: right;
-width: 140px;
-padding-top: 8px;
-position: absolute;
-top: 0;
-right: 0;
-}
-
-.menu-opcoes ul {
-font-size: 15px;
-}
-
-.menu-opcoes ul li {
-display: inline;
-margin-left: 20px;
-}
-
-.menu-opcoes a {
-color: #003366;
-}
-
 body {
-color: #333333;
-font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-
-.container {
-margin: 0 auto;
-width: 940px;
+	color: #333333;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 header {
-position: relative;
+	position: relative;
+}
+
+.container {
+	margin: 0 auto;
+	width: 940px;
+}
+
+.sacola {
+	background-image: url(../img/sacola.png);
+	background-repeat: no-repeat;
+	background-position: top right;
+
+	width: 140px; /*Ao modificar só a largura, a altura é modificada automaticamente, caso nao seja especificada.*/
+	padding-right: 35px; /*Esta dando 35px de distancia-a-direita entre os elementos internos da tag*/
+	padding-top: 8px;
+	
+	text-align: right;
+	font-size: 14px;
+	
+	position: absolute; /*Ao mudar o posicionamento padrão (static), o elemento sai do fluxo vertical e fica "sobre" o fluxo, neste caso em especifico do absoluto, o elemento vai se orientar referenciado pelo primeiro pai não estatico.*/
+	top: 0; /*A distancia que se dá do topo, conforme a referencia*/
+	right: 0; /*A distancia que se dá da direita, conforme a referencia*/
+	
 }
 
 .menu-opcoes {
-position: absolute;
-bottom: 0;
-right: 0;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.menu-opcoes ul {
+	font-size: 15px;
+}
+
+.menu-opcoes ul li {
+	display: inline;
+	margin-left: 20px;
+}
+
+.menu-opcoes a {
+	color: #003366;
 }
